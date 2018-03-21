@@ -27,9 +27,11 @@ class Controller
             require_once '../app/views/' . $view . '.php';
         } 
         else
-        {
-            require_once '../app/views/404.php';
-            die('404 page');
+        {   
+            $url = $_GET['url'];
+            echo '<div class="error-msg"><span class="error-span">' . dirname($_SERVER['SCRIPT_FILENAME']) . '/' . $view . '.php' . ' </span>is not found in the app/views folder. Check if the app/view file exists</div>';
+            die(require_once '../app/views/errors/404.php');
+            // die('404 page');
         }
     }
 }

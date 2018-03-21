@@ -11,7 +11,7 @@
 
         public function index()
         {
-            $this->view('hello');
+            $this->view('pages/index');
         }
 
 
@@ -19,7 +19,7 @@
         public function about()
         {
             
-            $this->view('about');
+            $this->view('pages/about');
            
         }
 
