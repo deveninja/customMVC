@@ -7,7 +7,12 @@
     <title>Website Name | Home</title>
 </head>
 <body>
-    <h1>Home Page</h1>
-    <p>I love MVC Frameworks</p>
+    <h1><?php echo $data['title']; ?> to Home Page</h1>
+    <p><?php 
+    echo $data['description']; 
+    echo APPROOT;
+    
+    ?></p>
+
 </body>
 </html>

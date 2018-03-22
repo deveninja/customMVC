@@ -6,6 +6,10 @@
 
 class Controller
 {
+    // public function __construct()
+    // {
+    //     $data = new metaData($title, $desc);
+    // }
     // Load Model
     public function model($model)
     {
@@ -34,4 +38,18 @@ class Controller
             // die('404 page');
         }
     }
+
+    // public function metaData($title, $desc)
+    // {   
+    //     $title;
+    //     $desc;
+    //     require_once('../app/helpers/pages/variables.php');
+    //     $data = [
+    //         'title' => $this->title = $title,
+    //         'description' => $this->desc = $desc
+            
+    //     ];
+
+    //     return $data;
+    // }
 }
