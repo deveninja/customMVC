@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Object Oriented PHP</title>
-</head>
-<body>
+<?php require APPROOT . '/views/includes/header.php'; ?>
+
     <?php echo $data['title']; ?>
     <br>
     <?php echo $data['description']; ?>
-</body>
-</html>
+
+    <?php   echo APPROOT;
+            echo URLROOT;
+            
+        
+    ?>
+
+<?php require APPROOT . '/views/includes/footer.php'; ?>

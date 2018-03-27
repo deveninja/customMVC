@@ -7,4 +7,4 @@ define('APPROOT', dirname(dirname(__FILE__)));
 define('URLROOT', 'http://localhost/oop/');
 
 // Define Site Name
-define('SITENAME', 'Custom MVC');
+define('SITENAME', 'My Own MVC Framework');

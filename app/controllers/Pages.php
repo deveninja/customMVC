@@ -15,7 +15,6 @@
 
         public function index()
         {   
-            
             include '../app/helpers/pages/variables.php';
             $this->view('pages/index', $data);
         }
@@ -24,8 +23,8 @@
 
         public function about()
         {
-            
-            $this->view('pages/about');
+            include '../app/helpers/pages/variables.php';
+            $this->view('pages/about', $data);
            
         }
 
