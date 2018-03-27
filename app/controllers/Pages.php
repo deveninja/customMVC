@@ -15,12 +15,8 @@
 
         public function index()
         {   
-            $data = [
-                'title' => 'Welcome',
-                'description' => 'Successful programming requires constant practice'
-                
-            ];
-                        
+            
+            include '../app/helpers/pages/variables.php';
             $this->view('pages/index', $data);
         }
 
