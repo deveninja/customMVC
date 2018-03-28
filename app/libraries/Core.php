@@ -7,9 +7,10 @@
 
 class Core 
 {
-    protected $currentController = 'Errors';
+    protected $currentController = 'Pages';
     protected $currentMethod = 'index';
     protected $params = [];
+    
 
 
 
@@ -17,17 +18,20 @@ class Core
     {
         // print_r($this->getUrl());
         $url = $this->getUrl();
+        $controllerFolder = '../app/controllers/';
+
+        // Checks if there is no first value or the url is in the home page
 
         // Look in controllers for first value
-        if(file_exists('../app/controllers/' . ucwords($url[0]) . '.php'))
+        if(file_exists( $controllerFolder . ucwords($url[0]) . '.php'))
         {
             // If file does exists, set the file as a controller
             $this->currentController = ucwords($url[0]);
             unset($url[0]);
-        }
+        } 
 
         // Require the controller
-        require_once '../app/controllers/' . $this->currentController . '.php';
+        require_once $controllerFolder . $this->currentController . '.php';
 
         // Instantiate controller class
         $this->currentController = new $this->currentController;

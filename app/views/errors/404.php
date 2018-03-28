@@ -26,5 +26,11 @@
 </head>
 <body>
     <h1>Page Not found!</h1>
+    <?php 
+    
+    echo URLROOT;
+    print_r($_GET['url']);
+    ?>
+    
 </body>
 </html>
